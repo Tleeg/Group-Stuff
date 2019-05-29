@@ -11,21 +11,20 @@ module.exports = {
     },
     '1 Customize Model S (1)': browser => {
         customObjects
-            .waitForElementVisible('[data-id="btn-navigation"]', 10000)
-            .click('[data-id="btn-navigation"]')
-            .waitForElementVisible('[data-id="btn-navigation"]', 10000)
-            .click('[data-id="btn-navigation"]')
-            .waitForElementVisible('[data-id="btn-navigation"]', 10000)
-            .click('[data-id="btn-navigation"]')
-            .click('[class="option-checkbox--title"]')
-            .click('[data-id="btn-navigation"]')
         .useXpath()
-            .waitForElementVisible('//*/span[contains(text(), "Model S Standard Range")]', 10000)
-            .assert.visible('//*/span[contains(text(), "Model S Standard Range")]')
-            .assert.visible('//*/span[contains(text(), "Solid Black")]')
-            .assert.visible('//*/span[contains(text(), "All Black Premium Interior with Figured Ash Wood Décor")]')
+        customObjects
+            .waitForElementVisible('//button[contains(text(), Next)]', 10000)
+            .click('//button[contains(text(), Next)]')
+            .waitForElementVisible('//button[contains(text(), Next)]', 10000)
+            .click('//button[contains(text(), Next)]')
+            .waitForElementVisible('//button[contains(text(), Next)]', 10000)
+            .click('//button[contains(text(), Next)]')
+            .click('//button[contains(text(), Next)]')
+        .useXpath()
+            .assert.visible('//*/span[contains(text(), "Model S Long Range")]')
+            .assert.visible('//*/span[contains(text(), "Red Multi-Coat")]')
+            .assert.visible('//*/span[contains(text(), "Premium Interior with Dark Ash")]')
             .assert.visible('//*/span[contains(text(), "Autopilot")]')
-            .assert.visible('//*/span[contains(text(), "Full Self-Driving Capability")]')
         .useCss()
     },
     '2': browser => {
@@ -49,7 +48,7 @@ module.exports = {
             .assert.visible('//*/span[contains(text(), "Model S Long Range")]')
             .assert.visible('//*/span[contains(text(), "Midnight Silver Metallic")]')
             .assert.visible('//*/span[contains(text(), " Sonic Carbon Slipstream Wheels")]')
-            .assert.visible('//*/span[contains(text(), "Black and White Premium Interior with Dark Ash Wood Décor")]')
+            // .assert.visible('//*/span[contains(text(), "Black and White Premium Interior with Dark Ash Wood Décor")]')
             .assert.visible('//*/span[contains(text(), "Autopilot")]')
             
     },
@@ -78,11 +77,10 @@ module.exports = {
             .click('[data-id="btn-navigation"]')
             .click('[data-id="btn-navigation"]')
             .useXpath()
-            .api.pause()
-            .assert.visible('//*/span[contains(text(), "Model S Standard Range")]')
-            .assert.visible('//*/span[contains(text(), "Solid Black")]')
-            .assert.visible('//*/span[contains(text(), "Silver Wheels")]')
-            .assert.visible('//*/span[contains(text(), "Figured Ash Wood Décor")]')
+            .assert.visible('//*/span[contains(text(), "Model S Long Range")]')
+            .assert.visible('//*/span[contains(text(), "Pearl White Multi-Coat")]')
+            .assert.visible('//*/span[contains(text(), "Slipstream Wheels")]')
+            // .assert.visible('//*/span[contains(text(), "Black and White Premium Interior with Dark Ash Wood Décor")]')
             .assert.visible('//*/span[contains(text(), "Autopilot")]')
             
             
@@ -100,10 +98,10 @@ module.exports = {
             .click('[data-id="btn-navigation"]')
             .click('[data-id="btn-navigation"]')
             .useXpath()
-            .assert.visible('//*/span[contains(text(), "Model S Standard Range")]')
+            .assert.visible('//*/span[contains(text(), "Model S Long Range")]')
             .assert.visible('//*/span[contains(text(), "Red Multi-Coat")]')
-            .assert.visible('//*/span[contains(text(), "Silver Wheels")]')
-            .assert.visible('//*/span[contains(text(), "Figured Ash Wood Décor")]')
+            .assert.visible('//*/span[contains(text(), "Slipstream Wheels")]')
+            .assert.visible('//*/span[contains(text(), "Black and White Premium Interior with Dark Ash Wood Décor")]')
             .assert.visible('//*/span[contains(text(), "Autopilot")]')
             
             
