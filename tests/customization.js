@@ -29,6 +29,7 @@ module.exports = {
     },
     '2': browser => {
         customObjects
+        .maximizeWindow()
         .useXpath()
             .click('//*/p[contains(text(), "Long Range")]')
             .assert.visible('//button[contains(text(), Next)]')

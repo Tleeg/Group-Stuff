@@ -5,9 +5,9 @@
 
   <testsuite name="customization"
     errors="0" failures="0" hostname="" id="" package="customization" skipped="0"
-    tests="4" time="32.08" timestamp="">
+    tests="4" time="27.23" timestamp="">
   
-    <testcase name="2" classname="customization" time="19.82" assertions="5">
+    <testcase name="2" classname="customization" time="17.25" assertions="5">
 
     
 
@@ -20,7 +20,7 @@
     
     </testcase>
   
-    <testcase name="4" classname="customization" time="5.067" assertions="4">
+    <testcase name="4" classname="customization" time="2.986" assertions="4">
 
     
 
@@ -31,7 +31,7 @@
     
     </testcase>
   
-    <testcase name="5" classname="customization" time="4.519" assertions="5">
+    <testcase name="5" classname="customization" time="3.994" assertions="5">
 
     
 
@@ -44,7 +44,7 @@
     
     </testcase>
   
-    <testcase name="1 Customize Model S (1)" classname="customization" time="2.671" assertions="7">
+    <testcase name="1 Customize Model S (1)" classname="customization" time="3.006" assertions="7">
 
     
 
